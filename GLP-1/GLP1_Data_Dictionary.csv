@@ -1,0 +1,15 @@
+File,Column,Type,Units,Definition,Coding,Notes
+GLP1.csv,CatID,integer identifier,none,Verified study cat identifier; consistent with the cytokine CatID.,1-29; only observed subset IDs are present.,Not interchangeable with serum or fecal SampleID; unique within each file.
+GLP_BA_PAIRED.csv,CatID,integer identifier,none,Verified study cat identifier; consistent with the cytokine CatID.,1-29; only observed subset IDs are present.,Not interchangeable with serum or fecal SampleID; unique within each file.
+GLP1.csv,Age,text,years and months,Age as recorded in the source GLP-1 dataset.,"Ny or NyNm; e.g., 8y or 9y10m.",Convert to months as 12*years + months; omitted months mean zero. Not an adjustment variable in the supplied GLP analyses.
+GLP1.csv,Concentration_pM,numeric,pM (pmol/L),Serum total glucagon-like peptide-1 concentration.,,Original-scale assay concentration; not active GLP-1 alone.
+GLP1.csv,group,text,none,Study group.,C = nondiabetic control; D = insulin-treated diabetic cat.,
+GLP_BA_PAIRED.csv,chenodeoxycholic_acid,numeric,ng/mg,Targeted fecal chenodeoxycholic acid concentration.,,"Original concentration, not percentage or untargeted relative abundance; wet/dry mass basis not specified in reviewed materials."
+GLP_BA_PAIRED.csv,Total_PBA,numeric,µg/mg,Targeted fecal primary bile-acid concentration as supplied.,,"Unit confirmed by study author on 2026-09-18, consistent with Table 5. No conversion or recomputation applied. Wet/dry mass basis not specified; see README for total consistency note."
+GLP_BA_PAIRED.csv,Total_SBA,numeric,µg/mg,Targeted fecal secondary bile-acid concentration as supplied.,,"Unit confirmed by study author on 2026-09-18, consistent with Table 5. No conversion or recomputation applied. Wet/dry mass basis not specified; see README for total consistency note."
+GLP_BA_PAIRED.csv,Total_BA,numeric,µg/mg,Targeted fecal total bile-acid concentration as supplied.,,"Unit confirmed by study author on 2026-09-18, consistent with Table 5. No conversion or recomputation applied. Wet/dry mass basis not specified; see README for total consistency note."
+GLP_BA_PAIRED.csv,GroupFA,text,none,Study group inherited from the targeted fecal data.,C = nondiabetic control; D = insulin-treated diabetic cat.,
+GLP_BA_PAIRED.csv,Total_GLP1,numeric,pM (pmol/L),Serum total GLP-1 concentration.,,Identical to GLP1.csv Concentration_pM for the same CatID.
+GLP_BA_PAIRED.csv,GroupDM,integer,none,Diabetes-status adjustment variable.,0 = control; 1 = diabetic.,Equivalent to GroupFA; not a separate outcome.
+GLP_BA_PAIRED.csv,Log_GLP1,numeric,natural-log scale,Natural logarithm of the numeric Total_GLP1 value expressed in pM.,,"ln(Total_GLP1), no offset; supplied precision retained."
+GLP_BA_PAIRED.csv,Log_CDCA,numeric,natural-log scale,Natural logarithm of the numeric chenodeoxycholic_acid value expressed in ng/mg.,,"ln(chenodeoxycholic_acid), no offset; supplied precision retained."
