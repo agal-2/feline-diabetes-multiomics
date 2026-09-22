@@ -51,3 +51,8 @@ Untargeted metabolomics files contain processed relative abundances; original-sc
 Raw mass-spectrometry instrument files, raw qPCR data, private identity keys, and a complete executable analysis-code package are not included. The available datasets and dictionaries document the deposited measurements and their analysis context; they are not a claim that every reported result can be reproduced without additional analysis specifications.
 
 Repository: https://github.com/agal-2/feline-diabetes-multiomics
+
+
+## License
+
+Except where otherwise noted, the datasets, dictionaries, cross-platform linkage, and documentation are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Reuse and adaptation, including commercial reuse, are permitted with appropriate credit, a license link, and an indication of changes. See [LICENSE.md](LICENSE.md) for the license notice and full terms.
