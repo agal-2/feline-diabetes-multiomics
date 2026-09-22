@@ -1,0 +1,14 @@
+File,Column,Type,Definition,Units,Scale,Coding,Domain,Notes
+DI.csv,RecordID,text identifier,Unique local record identifier,none,identifier,DI001–DI025,Metadata,Assigned in source row order; not a cross-platform animal identifier.
+DI.csv,CatID,integer identifier,Study cat identifier,none,identifier,,Metadata,Complete and unique for all 25 cats. The 22 previously linked IDs are retained. Laboratory measurement-profile matching resolved DI016 to CatID 20 and DI024/DI025 to author-approved CatIDs 30/31. Not interchangeable with metabolomics SampleID.
+DI.csv,DI,numeric,Fecal dysbiosis index,unitless,index,,Dysbiosis,Negative values indicate no major overall microbiome shift under the manuscript definition; positive values indicate a shift of increasing magnitude. Not a bacterial abundance.
+DI.csv,Faecalibacterium,numeric,Faecalibacterium abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
+DI.csv,Turicibacter,numeric,Turicibacter abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
+DI.csv,Streptococcus,numeric,Streptococcus abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
+DI.csv,Ecoli,numeric,Escherichia coli abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
+DI.csv,Blautia,numeric,Blautia abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
+DI.csv,Fusobacterium,numeric,Fusobacterium abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
+DI.csv,Clostridium_hiranonis,numeric,Peptacetobacter hiranonis abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count. Historical variable name for Peptacetobacter hiranonis retained.
+DI.csv,Bifidobacterium,numeric,Bifidobacterium abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
+DI.csv,Bacteriodes,numeric,Bacteroides abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count. Source misspelling retained; intended taxon is Bacteroides.
+DI.csv,group,text,Study group,none,categorical,Control = nondiabetic control; DM = insulin-treated diabetic,Metadata,16 controls and 9 diabetic cats. DI016 (CatID 20) corrected from DM to Control using laboratory and verified linkage records; all other group assignments retained.
