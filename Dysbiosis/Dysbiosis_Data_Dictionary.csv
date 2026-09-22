@@ -1,6 +1,6 @@
 File,Column,Type,Definition,Units,Scale,Coding,Domain,Notes
 DI.csv,RecordID,text identifier,Unique local record identifier,none,identifier,DI001–DI025,Metadata,Assigned in source row order; not a cross-platform animal identifier.
-DI.csv,CatID,integer identifier,Study cat identifier,none,identifier,,Metadata,Complete and unique for all 25 cats. The 22 previously linked IDs are retained. Laboratory measurement-profile matching resolved DI016 to CatID 20 and DI024/DI025 to author-approved CatIDs 30/31. Not interchangeable with metabolomics SampleID.
+DI.csv,CatID,integer identifier,Study cat identifier,none,identifier,,Metadata,Complete and unique for all 25 cats. The 22 previously linked IDs are retained. Laboratory measurement-profile matching resolved DI016 to CatID 20 and DI024/DI025 to CatIDs 30/31. Not interchangeable with metabolomics SampleID.
 DI.csv,DI,numeric,Fecal dysbiosis index,unitless,index,,Dysbiosis,Negative values indicate no major overall microbiome shift under the manuscript definition; positive values indicate a shift of increasing magnitude. Not a bacterial abundance.
 DI.csv,Faecalibacterium,numeric,Faecalibacterium abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
 DI.csv,Turicibacter,numeric,Turicibacter abundance,log10 DNA copies/g feces,base-10 logarithm,,Bacterial taxon,Already log10-transformed; not a percentage or raw copy count.
